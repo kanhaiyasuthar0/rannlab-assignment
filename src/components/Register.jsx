@@ -16,16 +16,28 @@ const Register = () => {
       />
 
       <br />
-      <input type="Email" placeholder="Enter Your Email Here" />
+      <input
+        onChange={() => setName(e.target.name)}
+        type="Email"
+        placeholder="Enter Your Email Here"
+      />
 
       <br />
       <input type="file" />
 
       <br />
-      <input type="password" placeholder="Password" />
+      <input
+        onChange={() => setName(e.target.name)}
+        type="password"
+        placeholder="Password"
+      />
 
       <br />
-      <input type="password" placeholder="Confirm Password" />
+      <input
+        onChange={() => setName(e.target.name)}
+        type="password"
+        placeholder="Confirm Password"
+      />
 
       <br />
 
