@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Register = () => {
+  const [name, setName] = useState("");
+
+  const handleSubmit = () => {};
   return (
     <div>
       <h1>Register</h1>
       <br />
 
-      <input type="text" placeholder="Enter Your Name Here" />
+      <input
+        onChange={() => setName(e.target.name)}
+        type="text"
+        placeholder="Enter Your Name Here"
+      />
 
       <br />
       <input type="Email" placeholder="Enter Your Email Here" />
@@ -22,7 +29,7 @@ const Register = () => {
 
       <br />
 
-      <button>Register</button>
+      <button onClick={handleSubmit}>Register</button>
     </div>
   );
 };
